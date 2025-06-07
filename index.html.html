@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTJ Tutoring</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4a148c;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd54f;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #7b1fa2, #4a148c);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            color: #6a1b9a;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 1.5rem;
+        }
+
+        .form-section input, .form-section select, .form-section textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin: 0.5rem 0 1rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-section button {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: #4a148c;
+        }
+
+        .hidden-content {
+            display: none;
+            padding: 1rem;
+            margin-top: 1rem;
+            background-color: #ffffff;
+            border-left: 4px solid #6a1b9a;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .login-section {
+            background: url('https://cdn.pixabay.com/photo/2021/06/06/13/26/school-6315842_960_720.png') no-repeat center center/contain;
+            background-color: #fff3e0;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .login-section input {
+            margin: 1rem 0;
+        }
+
+        #learner-interface {
+            display: none;
+            padding: 2rem;
+            background-color: #e1bee7;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .resource-section {
+            background-color: #f8eafa;
+            padding: 2rem;
+            margin: 2rem auto;
+            border-radius: 10px;
+            max-width: 900px;
+        }
+
+        .resource-section h2 {
+            color: #6a1b9a;
+            margin-bottom: 1rem;
+        }
+
+        .resource-section ul {
+            padding-left: 1.5rem;
+        }
+
+        .resource-section li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to MTJ Tutoring</h1>
+        <p>Empowering Students with Interactive & Gamified Learning</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#subjects">Subjects</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+        <a href="#enrol">Enrol</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Achieve Academic Success</h1>
+        <p>Expert Tutors | Personalized Learning | Fun & Interactive Lessons</p>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Us</h2>
+        <p>MTJ Tutoring offers personalized academic support tailored to each learner’s needs. We make learning fun with interactive resources and gamified lessons using cartoon-style characters and progress badges!</p>
+    </div>
+
+    <div class="section" id="subjects">
+        <h2>Subjects We Offer</h2>
+        <ul>
+            <li>Mathematics</li>
+            <li>Physical Sciences</li>
+            <li>Life Sciences</li>
+            <li>English & Languages</li>
+            <li>Accounting & Economics</li>
+            <li>Geography</li>
+            <li>Technical Subjects</li>
+        </ul>
+    </div>
+
+    <div class="resource-section" id="resources">
+        <h2>Free Study Resources</h2>
+        <p>Explore free downloadable study notes and practice questions for various subjects:</p>
+        <ul>
+            <li><a href="#">Grade 8 - 9 Natural Sciences Worksheets</a></li>
+            <li><a href="#">Grade 10 - 12 Maths Practice Papers</a></li>
+            <li><a href="#">Life Sciences Summary Notes</a></li>
+            <li><a href="#">Past Exam Papers with Memos</a></li>
+            <li><a href="#">Study Tips and Time Management Guides</a></li>
+        </ul>
+    </div>
+
+    <div class="section form-section" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="section form-section" id="enrol">
+        <h2>Enrol Now</h2>
+        <form id="enrolmentForm">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <select id="grade" required>
+                <option value="">Select Grade</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+            <input type="text" id="subjects" placeholder="Subjects Interested In" required>
+            <input type="text" id="location" placeholder="Location/Province" required>
+            <select id="mode" required>
+                <option value="">Preferred Tutoring Mode</option>
+                <option>Online</option>
+                <option>In-person</option>
+                <option>Hybrid</option>
+            </select>
+            <button type="button" onclick="submitEnrolment()">Submit & WhatsApp</button>
+        </form>
+    </div>
+
+    <div class="login-section" id="login">
+        <h2>Learner Login</h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="loginLearner()">Login</button>
+    </div>
+
+    <div id="learner-interface">
+        <h2>Welcome Learner 1!</h2>
+        <p>Access your materials below:</p>
+        <ul>
+            <li><a href="#">Maths Notes</a></li>
+            <li><a href="#">Science Worksheets</a></li>
+            <li><a href="#">Life Sciences Diagrams</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MTJ Tutoring | All Rights Reserved | info@mtjtutoring.com</p>
+    </footer>
+
+    <script>
+        function submitEnrolment() {
+            const name = document.getElementById("fullName").value;
+            const grade = document.getElementById("grade").value;
+            const subjects = document.getElementById("subjects").value;
+            const location = document.getElementById("location").value;
+            const mode = document.getElementById("mode").value;
+
+            if (!name || !grade || !subjects || !location || !mode) {
+                alert("Please complete all fields.");
+                return;
+            }
+
+            const message = `Hello, I would like to enrol.\nName: ${name}\nGrade: ${grade}\nSubjects: ${subjects}\nLocation: ${location}\nMode: ${mode}`;
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/27661108687?text=${encoded}`, '_blank');
+        }
+
+        function loginLearner() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "Learner 1" && password === "12345") {
+                document.getElementById("learner-interface").style.display = "block";
+                document.getElementById("login").style.display = "none";
+                window.location.hash = "learner-interface";
+            } else {
+                alert("Incorrect login credentials. Try again.");
+            }
+        }
+    </script>
+</body>
+</html>
